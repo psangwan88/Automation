@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SharechatSuite" thread-count="1" parallel="classes">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <test name="TestProject">
+        <classes>
+            <class name="org.tests.HomePageTests" />
+            <class name="org.tests.ActionsOnPostTests" />
+            <class name="org.tests.SharedPostsTests" />
+        </classes>
+    </test>
+
+</suite> <!-- Suite -->
+
+<!--        <?xml version='1.0' encoding='UTF-8' ?>-->
+<!--        &lt;!&ndash; supports only class level parallel &ndash;&gt;-->
+<!--        <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >-->
+<!--<suite name="SelfServeRegression" >-->
+<!--&lt;!&ndash;       thread-count="1"&ndash;&gt;-->
+<!--&lt;!&ndash;       parallel="classes"&ndash;&gt;-->
+
+<!--<test name="Regression">-->
+<!--    <classes>-->
+<!--        <class name="org.tests.HomePageTests"/>-->
+<!--    </classes>-->
+
+<!--</test>-->
+<!--</suite>-->
