@@ -1,7 +1,6 @@
 package org.tests;
 
 import com.microsoft.playwright.Page;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.factory.BaseClass;
 import org.factory.DriverFactory;
 import org.json.simple.JSONObject;
