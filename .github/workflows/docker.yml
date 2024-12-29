@@ -41,3 +41,10 @@ jobs:
     - name: Build with Maven
       run: mvn -q clean test -DsuiteXmlFile=testNGFiles/tests.xml 
 
+    - name: upload results 
+      if: always() # Ensures results are uploaded even if tests fail
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: allure-results/      
+
