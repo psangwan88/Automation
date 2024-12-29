@@ -30,7 +30,7 @@ jobs:
      
     - name: Install Playwright dependency
       run: |
-          docker exec mcr.microsoft.com/playwright/java:v1.49.0-noble sudo mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install-deps"   
+          sudo mvn exec:java -e -Dexec.mainClass=com.microsoft.playwright.CLI -Dexec.args="install-deps"   
           
     - name: Set up JDK 17
       uses: actions/setup-java@v4
