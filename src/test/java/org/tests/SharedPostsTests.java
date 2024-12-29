@@ -2,7 +2,7 @@ package org.tests;
 
 import com.microsoft.playwright.Page;
 import org.factory.BaseClass;
-import org.factory.DriverFactory;
+import org.factory.DriverFactory1;
 import org.json.simple.JSONObject;
 import org.pages.HomePage;
 import org.pages.SharedPost;
