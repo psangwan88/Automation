@@ -16,7 +16,7 @@ jobs:
 
     - name: Debug Username and Password
       run: |
-        echo "Docker Username: ${{ secrets.DOCKERHUBUSER }}"
+        echo "Docker Username: ${{ secrets.DOCKERUSER }}"
         echo "Password length: secrets.DOCKERHUBPASSWORD"
     
     # Log in to Docker Hub
