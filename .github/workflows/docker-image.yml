@@ -22,6 +22,6 @@ jobs:
         password: ${{ secrets.DOCKERPASSWORD }}
     - name: Pull and run docker image
       run: |
-          docker pull playwrightsc:latest   
-          docker playwrightsc:latest  
+          docker pull sanguhbk88/playwrightsc:latest   
+          docker sanguhbk88/playwrightsc:latest  
 
