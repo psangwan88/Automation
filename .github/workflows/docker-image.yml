@@ -23,5 +23,5 @@ jobs:
     - name: Pull and run docker image
       run: |
           docker pull sanguhbk88/playwrightsc:latest   
-          docker run -it sanguhbk88/playwrightsc:latest  
+          docker run sanguhbk88/playwrightsc:latest  
 
