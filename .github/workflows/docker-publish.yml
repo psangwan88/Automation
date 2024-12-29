@@ -17,14 +17,13 @@ jobs:
     - name: Debug Username and Password
       run: |
         echo "Docker Username: ${{ secrets.DOCKERUSER }}"
-        echo "Password length: secrets.DOCKERHUBPASSWORD"
     
     # Log in to Docker Hub
     - name: Log in to Docker Hub
       uses: docker/login-action@v2
       with:
-        username: ${{ secrets.DOCKERHUBUSER }}
-        password: ${{ secrets.DOCKERHUBPASSWORD }}
+        username: ${{ secrets.DOCKERUSER }}
+        password: ${{ secrets.DOCKERPASSWORD }}
 
     # Build the Docker image
     - name: Build Docker image
