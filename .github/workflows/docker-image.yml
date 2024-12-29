@@ -1,0 +1,27 @@
+name: Docker Image RUN
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+        # Log in to Docker Hub
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKERUSER }}
+        password: ${{ secrets.DOCKERPASSWORD }}
+    - name: Pull and run docker image
+      run: |
+          docker pull playwrightsc:latest   
+          docker playwrightsc:latest  
+
